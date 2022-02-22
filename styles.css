@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800;900&display=swap');
+
+/* Standard */
+
+body{
+    font-size: 1vw;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #18183E;
+}
+
+.container {
+    padding: 0 8em;   
+}
+
+button{
+    border: none;
+    color: #FAF9FB;
+    background-color: #6C72DE;
+    padding: 1em 2em;
+    border-radius: 0.31em;
+    font-size: .9em;
+    font-weight: 700;
+    max-height: 100%;
+}
+
+button:hover{
+    background-color: #9FA2E3;
+}
+
+header{
+    padding: 1.25em 0;
+    position: sticky;
+	top: 0;
+}
+
+h1{
+    font-size: 5.5em;
+    font-weight: 900;
+    line-height: 1;
+    margin: 0 0;
+}
+
+h2{
+    font-size: 4em;
+    font-weight: 900;
+    line-height: 1;
+    margin: 0 0;
+}
+
+h3{
+    font-size: 3.33em;
+    font-weight: 900;
+    line-height: 1;
+    margin: 0 0;
+}
+
+h4{
+    font-size: 1.15em;
+    font-weight: 900;
+    line-height: 1;
+    margin: 0 0 .5em 0;
+    color: #6C72DE;
+    border-bottom: 2px solid;
+}
+
+h5{
+    font-size: 1.3em;
+    font-weight: 900;
+    line-height: 1;
+    margin: 0 0 .5em 0;
+}
+
+p{
+    font-size: 1.15em;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+/* Nav */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hero */
+
+.hero{
+    background-color: #18183E;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: -5.25em;
+    background-image: url("images/vgs-home-hero-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-shadow: -4px -2px 12px #18183E;
+    position: relative;
+    z-index: -9000;
+}
+
+.hero-content{
+    color: #FAF9FB;
+}
+
+.hero-subtitle{
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.5;
+    width: 50%;
+    padding: 0.5em 0;
+}
+
+.hero-button{
+    background-color: #2EA44F;
+}
+
+.hero-button:hover{
+    background-color: #7FCE95;
+}
+
+.sage-position {
+    position: absolute;
+    right: 0em;
+    bottom: 4em;
+    z-index: -1;
+}
+.knight-position {
+    position: absolute;
+    right: 25em;
+    bottom: 28em;
+    z-index: -2;
+}
+.dragon-position {
+    position: absolute;
+    right: 20em;
+    bottom: 0em;
+    z-index: -2;
+}
+.alchemist-position {
+    position: absolute;
+    right: 34em;
+    bottom: 16em;
+    z-index: -1;
+}
+.merch-position {
+    position: absolute;
+    right: 55em;
+    bottom: 0em;
+    z-index: -2;
+}
+
+
+
+/* Meet Characters */
+
+.meet{
+    display: flex;
+    align-items: center;
+    background-color: #E6ECF5;
+    width: 100vw;
+    height: 65vh;
+}
+
+.meet-content{
+    display: flex;
+    align-items: center;
+}
+
+.meet-item{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* The Characters */
+
+.char{
+    display: flex;
+    align-items: center;
+    background-color: #FAF9FB;
+    width: 100vw;
+}
+
+.char-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow:1;
+    margin: auto;
+}
+
+.flex-reverse{
+    flex-direction: row-reverse;
+}
+
+.char-item{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    padding: 0 4em;
+}
+
+/* What's Going On */
+
+.news{
+    background-color: #E6ECF5;
+    padding: 3em 0;
+}
+
+.news-content{
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+
+
+}
+
+.news-item{
+    background-color: #FAF9FB;
+    border-radius: 0.31em;
+    display: flex;
+}
+
+.news-card-img{
+    width: 50%;
+    height: 100%;
+    background-image: url("images/vgs-genericbg.svg");
+    background-size: cover;
+    border-radius: 0.31em 0 0 0.31em;
+
+}
+
+.news-card-txt{
+    padding: 2em;
+}
+
+.news-item > div{
+    flex: 1 1 0px;
+}
+
+/* Footer */
+
+footer{
+    background-color: #18183E;
+    padding: 2em 0 1.5em 0;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    padding: 0 2em 0 0;
+    display: flex;
+    align-items: center;
+}
+
+a{
+    color: #E6ECF5;
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: 600;
+}
+
+a:hover{
+    color: #88889B;
+}
+
+i{
+    padding: 0 .3em 0 0;
+}
+
+.add-padding{
+    padding: 4em 0;
+}
