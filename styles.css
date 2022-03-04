@@ -11,7 +11,7 @@ body{
 }
 
 .container {
-    padding: 0 8em;   
+    padding: 0 8em;
 }
 
 button{
@@ -130,29 +130,48 @@ p{
     bottom: 4em;
     z-index: -1;
 }
+.sage-size {
+    height:45em;
+}
+
 .knight-position {
     position: absolute;
     right: 25em;
     bottom: 28em;
     z-index: -2;
 }
+.knight-size{
+    height:20em;
+}
+
 .dragon-position {
     position: absolute;
     right: 20em;
     bottom: 0em;
     z-index: -2;
 }
+.dragon-size{
+    height:28em;
+}
+
 .alchemist-position {
     position: absolute;
     right: 34em;
     bottom: 16em;
     z-index: -1;
 }
+.alchemist-size{
+    height:8em;
+}
+
 .merch-position {
     position: absolute;
     right: 55em;
     bottom: 0em;
     z-index: -2;
+}
+.merch-size{
+    height:14em;
 }
 
 
@@ -164,7 +183,7 @@ p{
     align-items: center;
     background-color: #E6ECF5;
     width: 100vw;
-    height: 65vh;
+    height: 85vh;
 }
 
 .meet-content{
@@ -176,6 +195,10 @@ p{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+}
+
+.mascots-arcade-img{
+    width:50em;
 }
 
 /* The Characters */
@@ -207,6 +230,9 @@ p{
     justify-content: center;
     padding: 0 4em;
 }
+.char-size{
+    height:30em;
+}
 
 /* What's Going On */
 
@@ -218,24 +244,21 @@ p{
 .news-content{
     margin-top: 3em;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2em;
-
-
 }
 
 .news-item{
     background-color: #FAF9FB;
     border-radius: 0.31em;
-    display: flex;
+    display: grid;
 }
 
 .news-card-img{
-    width: 50%;
-    height: 100%;
+    height: 15em;
     background-image: url("images/vgs-genericbg.svg");
     background-size: cover;
-    border-radius: 0.31em 0 0 0.31em;
+    border-radius: 0.31em 0.31em 0 0;
 
 }
 
@@ -245,6 +268,12 @@ p{
 
 .news-item > div{
     flex: 1 1 0px;
+}
+
+/* Mario */
+
+.mario-size{
+    height:40em;
 }
 
 /* Footer */
@@ -283,3 +312,180 @@ i{
 .add-padding{
     padding: 4em 0;
 }
+
+@media (orientation: portrait) {
+
+    .hide{
+        display:none;
+    }
+    .nav{
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+
+    button{
+        width:100%
+    }
+    
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:.5em;
+        padding: 0 0;
+        justify-items: center;
+
+    }
+
+    li{
+        padding: 0 0;
+    }
+
+    body{
+        font-size: 16px;
+        max-width: 100vw;
+    }
+
+    .container {
+        padding: 0 1em;
+    }
+
+    h1{
+        font-size: 2.55em;
+    }
+    
+    h2{
+        font-size: 2.55em;
+    }
+    
+    h3{
+        font-size: 2em;
+    }
+    
+    h4{
+        font-size: 1.15em;
+    }
+    
+    h5{
+        font-size: 1.3em;
+    }
+    
+    p{
+        font-size: 1.15em;
+    }
+
+    img {
+        max-width: fit-content;
+    }
+
+    .hero{
+        display: flex;
+        align-items: flex-start;
+        padding-top: 5.5em;
+    }
+
+    .hero-subtitle{
+        font-size: 1.15em;
+        width: 100%;
+        padding: 0.5em 0;
+        font-weight: 600;
+    }
+
+    .sage-position {
+        right: 0em;
+        bottom: 11em;
+        z-index: -1;
+    }
+    .sage-size {
+        height:22em;
+    }
+    
+    .knight-position {
+        right: 12em;
+        bottom: 21em;
+        z-index: -2;
+        transform: rotate(-60deg);
+    }
+    .knight-size{
+        height:10em;
+    }
+    
+    .dragon-position {
+        right: 0em;
+        bottom: 0em;
+        z-index: -2;
+    }
+    .dragon-size{
+        height:17em;
+    }
+    
+    .alchemist-position {
+        right: 16em;
+        bottom: 18em;
+        z-index: -1;
+    }
+    .alchemist-size{
+        height:4em;
+    }
+    
+    .merch-position {
+        right: 12em;
+        bottom: 9em;
+        z-index: -2;
+    }
+    .merch-size{
+        height:8em;
+    }
+
+    .meet{
+        height: 100%;
+        padding: 2em 0;
+    }
+
+    .meet-content{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mascots-arcade-img{
+        width: 90vw;
+    }
+
+    .char-content{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .char-item{
+        width: 100%;
+        padding: 0 0;
+    }
+
+    .char-size{
+        height:20em;
+    }
+
+    .news-content{
+        grid-template-columns: 1fr;
+        margin-top: 2em;
+    }
+    
+    .news{
+        margin-top: 2em;
+        padding: 2em 0;
+    }
+    
+    .add-padding{
+        padding: 2em 0 0 0;
+    }
+
+    .mario-size{
+        height:20em;
+    }
+
+
+}
+
+/* add clamp? */
+/* positioning on hero is a littel funky */
+
