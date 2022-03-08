@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/639f9dd11a.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="images/vgs-sagefavicon.png"/>
     <title>Video Game Sage</title>
@@ -13,7 +14,7 @@
     <header>
         <div class="container nav">
             <div>
-                <img src="images/vgs-logo.svg" alt="Video Game Sage Logo" style="height:2.1em;">
+                <img src="images/vgs-logo.svg" alt="Video Game Sage Logo" style="height: clamp(30px, 2.3em, 40px);">
             </div>
             <button type="button" class="hero-button hide" onclick="location.href='https://www.videogamesages.com/forums'">
                 Join the Discussion
@@ -53,6 +54,7 @@
         </div>
     </section>
 
+
     <section class="meet">
         <div class="container meet-content">
             <div class="meet-item">
@@ -68,98 +70,100 @@
             </div>
         </div>
     </section>
+    <section class="char-section">
+        <div class="char">
+            <div class="container char-content flex-reverse">
+                <div class="char-item">
+                    <h4>
+                        GAMERS
+                    </h4>
+                    <h3>
+                        The Knight
+                    </h3>
+                    <p>
+                        A noble gamer, competitive and dexterous. Always eager to face new challenges, a new quest, or a new personal best.
+                    </p>
 
-    <section class="char">
-        <div class="container char-content flex-reverse">
-            <div class="char-item">
-                <h4>
-                    GAMERS
-                </h4>
-                <h3>
-                    The Knight
-                </h3>
-                <p>
-                    A noble gamer, competitive and dexterous. Always eager to face new challenges, a new quest, or a new personal best.
-                </p>
+                    <button type="button" onclick="location.href='https://www.videogamesages.com/forums/forum/14-play-games/'">
+                        Play Games With Us
+                    </button>
+                </div>
+                <div>
+                    <img class="char-size" src="images/vgs-home-char-knight.svg" alt="the Gamer Knight Character">
+                </div>
+            </div>
+        </div>
 
-                <button type="button" onclick="location.href='https://www.videogamesages.com/forums/forum/14-play-games/'">
-                    Play Games With Us
-                </button>
+        <div class="char">
+            <div class="container char-content">
+                <div class="char-item">
+                    <h4>
+                        COLLECTORS
+                    </h4>
+                    <h3>
+                        The Dragon
+                    </h3>
+                    <p>
+                        Adamantly on guard, the fierce collector keeps a close eye on their stash of games. Keeping them orderly and preserved.
+                    </p>
+
+                    <button type="button" onclick="location.href='https://www.videogamesages.com/forums/forum/10-collectors-lair/'">
+                        Show Off Your Collection
+                    </button>
+                </div>
+                <div>
+                    <img class="char-size" src="images/vgs-home-char-dragon.svg" alt="the Collector Dragon Character">
+                </div>
             </div>
-            <div>
-                <img class="char-size" src="images/vgs-home-char-knight.svg" alt="the Gamer Knight Character">
+        </div>
+
+        <div class="char">
+            <div class="container char-content flex-reverse">
+                <div class="char-item">
+                    <h4>
+                        HOMEBREWERS
+                    </h4>
+                    <h3>
+                        The Alchemist
+                    </h3>
+                    <p>
+                        Creative and resourceful. A homebrewer burns the midnight oil, using their skills to craft new experiences to share with the community.
+                    </p>
+
+                    <button type="button" onclick="location.href='https://www.videogamesages.com/forums/forum/21-homebrews/'">
+                        See What’s Brewing
+                    </button>
+                </div>
+                <div>
+                    <img class="char-size" src="images/vgs-home-char-alchemist.svg" alt="the Brewer Alchemist Character">
             </div>
+            </div>
+        </div>
+
+        <div class="char">
+            <div class="container char-content">
+                <div class="char-item">
+                    <h4>
+                        SELLERS
+                    </h4>
+                    <h3>
+                        The Merchant
+                    </h3>
+                    <p>
+                        The thrifty seller acquires rare gems to add to their stock. They strike deals with their trusted customers and help supply the community.
+                    </p>
+
+                    <button type="button" onclick="location.href='https://www.videogamesages.com/forums/forum/24-commerce/'">
+                        Buy & Sell in our Market
+                    </button>
+                </div>
+                <div>
+                    <img class="char-size" src="images/vgs-home-char-merchant.svg" alt="the Seller Merchant Character">
+                </div>
+            </div> 
         </div>
     </section>
 
-    <section class="char">
-        <div class="container char-content">
-            <div class="char-item">
-                <h4>
-                    COLLECTORS
-                </h4>
-                <h3>
-                    The Dragon
-                </h3>
-                <p>
-                    Adamantly on guard, the fierce collector keeps a close eye on their stash of games. Keeping them orderly and preserved.
-                </p>
-
-                <button type="button" onclick="location.href='https://www.videogamesages.com/forums/forum/10-collectors-lair/'">
-                    Show Off Your Collection
-                </button>
-            </div>
-            <div>
-                <img class="char-size" src="images/vgs-home-char-dragon.svg" alt="the Collector Dragon Character">
-            </div>
-        </div>
-    </section>
-
-    <section class="char">
-        <div class="container char-content flex-reverse">
-            <div class="char-item">
-                <h4>
-                    HOMEBREWERS
-                </h4>
-                <h3>
-                    The Alchemist
-                </h3>
-                <p>
-                    Creative and resourceful. A homebrewer burns the midnight oil, using their skills to craft new experiences to share with the community.
-                </p>
-
-                <button type="button" onclick="location.href='https://www.videogamesages.com/forums/forum/21-homebrews/'">
-                    See What’s Brewing
-                </button>
-            </div>
-            <div>
-                <img class="char-size" src="images/vgs-home-char-alchemist.svg" alt="the Brewer Alchemist Character">
-          </div>
-        </div>
-    </section>
-
-    <section class="char">
-        <div class="container char-content">
-            <div class="char-item">
-                <h4>
-                    SELLERS
-                </h4>
-                <h3>
-                    The Merchant
-                </h3>
-                <p>
-                    The thrifty seller acquires rare gems to add to their stock. They strike deals with their trusted customers and help supply the community.
-                </p>
-
-                <button type="button" onclick="location.href='https://www.videogamesages.com/forums/forum/24-commerce/'">
-                    Buy & Sell in our Market
-                </button>
-            </div>
-            <div>
-                <img class="char-size" src="images/vgs-home-char-merchant.svg" alt="the Seller Merchant Character">
-            </div>
-        </div> 
-    </section>
 
     <section class="news">
         <div class="container">
@@ -281,7 +285,7 @@
                 </button>
             </div>
             <div>
-                <img class="mario-size" src="images/vgs-home-char-mariosage.svg" alt="The Sage dressed like Mario">
+                <img class="char-size" src="images/vgs-home-char-mariosage.svg" alt="The Sage dressed like Mario">
             </div>
         </div>
     </section>

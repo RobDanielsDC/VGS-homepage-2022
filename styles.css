@@ -20,7 +20,8 @@ button{
     background-color: #6C72DE;
     padding: 1em 2em;
     border-radius: 0.31em;
-    font-size: .9em;
+    font-size: clamp(14px, 1em, 24px);
+    margin: .5em 0;
     font-weight: 700;
     max-height: 100%;
 }
@@ -36,27 +37,28 @@ header{
 }
 
 h1{
-    font-size: 5.5em;
+    font-size: clamp(50px, 5em, 80px);
     font-weight: 900;
     line-height: 1;
     margin: 0 0;
 }
 
 h2{
-    font-size: 4em;
+    font-size: clamp(40px, 4em, 60px);
     font-weight: 900;
     line-height: 1;
     margin: 0 0;
 }
 
 h3{
-    font-size: 3.33em;
+    font-size: clamp(30px, 3.33em, 50px);
     font-weight: 900;
     line-height: 1;
     margin: 0 0;
 }
 
 h4{
+    font-size: clamp(18px, 1.15em, 30px);
     font-size: 1.15em;
     font-weight: 900;
     line-height: 1;
@@ -66,19 +68,25 @@ h4{
 }
 
 h5{
-    font-size: 1.3em;
+    font-size: clamp(18px, 1.15em, 30px);
     font-weight: 900;
     line-height: 1;
     margin: 0 0 .5em 0;
 }
 
 p{
-    font-size: 1.15em;
+    font-size: clamp(16px, 1.15em, 30px);
     font-weight: 600;
     line-height: 1.45;
 }
 
 /* Nav */
+
+header{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+}
 
 .nav{
     display: flex;
@@ -94,25 +102,33 @@ p{
     height: 100vh;
     display: flex;
     align-items: center;
-    margin-top: -5.25em;
     background-image: url("images/vgs-home-hero-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     text-shadow: -4px -2px 12px #18183E;
     position: relative;
-    z-index: -9000;
 }
 
 .hero-content{
     color: #FAF9FB;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+.hero-char{
+    width: auto;
+    height: 100vh;
+    position: relative;
+    z-index: 1
 }
 
 .hero-subtitle{
-    font-size: 1.5em;
-    font-weight: 700;
+    font-size: clamp(20px, 1.5em, 44px);
+    font-weight: 600;
+    width: 45%;
     line-height: 1.5;
-    width: 50%;
     padding: 0.5em 0;
 }
 
@@ -123,6 +139,7 @@ p{
 .hero-button:hover{
     background-color: #7FCE95;
 }
+
 
 .sage-position {
     position: absolute;
@@ -183,7 +200,7 @@ p{
     align-items: center;
     background-color: #E6ECF5;
     width: 100vw;
-    height: 85vh;
+    padding: 4em 0;
 }
 
 .meet-content{
@@ -195,6 +212,7 @@ p{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    max-width: 45%;
 }
 
 .mascots-arcade-img{
@@ -203,10 +221,14 @@ p{
 
 /* The Characters */
 
+.char-section{
+    padding: 4em 0;
+    background-color: #FAF9FB;
+}
+
 .char{
     display: flex;
     align-items: center;
-    background-color: #FAF9FB;
     width: 100vw;
 }
 
@@ -228,7 +250,6 @@ p{
     flex-direction: column;
     width: 30%;
     justify-content: center;
-    padding: 0 4em;
 }
 .char-size{
     height:30em;
@@ -382,13 +403,13 @@ i{
         display: flex;
         align-items: flex-start;
         padding-top: 5.5em;
+        text-align: center;
     }
 
     .hero-subtitle{
         font-size: 1.15em;
         width: 100%;
         padding: 0.5em 0;
-        font-weight: 600;
     }
 
     .sage-position {
@@ -447,6 +468,10 @@ i{
         justify-content: center;
     }
 
+    .meet-item{
+        max-width: 100%;
+    }
+
     .mascots-arcade-img{
         width: 90vw;
     }
@@ -462,7 +487,9 @@ i{
     }
 
     .char-size{
-        height:20em;
+        max-width: 100%; 
+        height: 20em;
+        object-fit: contain;
     }
 
     .news-content{
@@ -477,10 +504,6 @@ i{
     
     .add-padding{
         padding: 2em 0 0 0;
-    }
-
-    .mario-size{
-        height:20em;
     }
 
 
