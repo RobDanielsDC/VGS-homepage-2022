@@ -120,7 +120,9 @@ header{
 .hero-char{
     width: auto;
     height: 100vh;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     z-index: 1
 }
 
@@ -200,7 +202,7 @@ header{
     align-items: center;
     background-color: #E6ECF5;
     width: 100vw;
-    padding: 4em 0;
+    padding: 6em 0 4em 0;
 }
 
 .meet-content{
@@ -331,7 +333,7 @@ i{
 }
 
 .add-padding{
-    padding: 4em 0;
+    padding: 8em 0 6em 0;
 }
 
 @media (orientation: portrait) {
@@ -459,8 +461,7 @@ i{
     }
 
     .meet{
-        height: 100%;
-        padding: 2em 0;
+        min-height: 65vh;
     }
 
     .meet-content{
@@ -503,8 +504,10 @@ i{
     }
     
     .add-padding{
-        padding: 2em 0 0 0;
+        padding: 4em 0 2em 0;
     }
 
-
 }
+/* need to center headings 
+thank you section not tall enough on desktop
+*/
